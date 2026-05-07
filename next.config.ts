@@ -1,13 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  /* Agar aapko build ke waqt errors ignore karne hain to ye rakhein, warna khali chod dein */
   typescript: {
-    // Build pass karne ke liye agar koi choti-moti types ki galti ho
     ignoreBuildErrors: true,
-  },
-  eslint: {
-    // ESLint errors ko build ke waqt ignore karega
-    ignoreDuringBuilds: true,
   },
 };
 
